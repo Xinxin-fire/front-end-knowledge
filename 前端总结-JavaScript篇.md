@@ -1,4 +1,4 @@
-前端基础-JS篇
+前端总结-JS篇
 
 - JavaScript有哪些数据类型，它们的区别？
 - Symbol的作用
