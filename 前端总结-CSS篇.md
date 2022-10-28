@@ -39,7 +39,7 @@ box-sizeing: border-box IE盒模型
 - **position：absolute**：将元素设置为绝对定位并移除到可视范围之外，元素占据空间，可以触发事件；
 - **z-index：负值**：将元素置于其他元素的下面实现隐藏效果
 - **transform：scale(0)**：将元素缩放为0，元素占据空间，但不能触发事件；
-- **clip-path**：使用裁剪实现元素的隐藏，元素占据空间，但不能触发事件；
+- **clip-path: circle(0)**：使用裁剪实现元素的隐藏，元素占据空间，但不能触发事件；
 
 #### 4. 单行文本溢出、多行文本溢出
 
@@ -51,7 +51,7 @@ text-overflow: ellipsis;
 white-space: no-wrap;
 ```
 
-多行文本溢出
+**多行文本溢出：**
 
 ```
 overflow: hidden;            // 溢出隐藏
@@ -61,22 +61,63 @@ display:-webkit-box;         // 作为弹性伸缩盒子模型显示。
 -webkit-line-clamp:3;        // 显示的行数
 ```
 
+#### 5.重排重绘的区别
+
+**重排**：元素的大小或位置发生变化，浏览器对整个页面或局部页面重新布局的过程叫做重排
+
+**重绘**：元素的颜色，背景色发生变化，浏览器对元素外观重新绘制的过程叫做重绘
+
+发生重排的情况: 
+
+- 页面初始渲染
+- 页面元素的增加或删除
+- 改变元素的位置、大小、内容等
+- 改变浏览器窗口大小
+- 获取元素的offsetWidth、offsetHeight、scrollHeight、offsetTop、scrollTop等属性
+
+发生重绘的情况：
+
+- 元素的color、visibility、background、text-decoration、border-radius等属性的改变
+
+**重排一定发生重绘，重绘不一定发生重排**
+
 #### 6. em和rem的区别
 
-- 画一条 0.5px 的线
-- clientHeight、offsetHeight、scrollHeight、
-  offsetTop、scrollTop的区别
-- z-index 属性在什么情况下会失效
-- display、float、position 的关系
-- 重排重绘的区别
-- 什么是css3硬件加速
-- CSS 优化和提高性能的方法有哪些
-- 水平垂直居中
-- 实现一个三角形
-- 两列布局
-- 三列布局
-- css选择器
-- flex，grid
+`em`在 font-size 中使用是相对于父元素的字体大小，在其他属性中使用是相对于自身的字体大小，如 width
+
+`rem`相对于根元素的font-size
+
+#### 7. clientHeight、offsetHeight、scrollHeight、offsetTop、scrollTop的区别
+
+#### 8. 层叠的层级有哪些
+
+#### 9. z-index 属性在什么情况下会失效
+
+#### 10. 什么是css3硬件加速
+
+#### 11. display、float、position 的关系
+
+#### 12. 画一条 0.5px 的线
+
+#### 13. display、float、position 的关系
+
+#### 14. CSS 优化和提高性能的方法有哪些
+
+#### 15. css选择器
+
+#### 16. 水平垂直居中
+
+#### 17. 实现一个三角形
+
+#### 18. 两列布局
+
+#### 19. 三列布局
+
+#### 20. flex布局
+
+#### 21. grid布局
+
+
 
 
 
